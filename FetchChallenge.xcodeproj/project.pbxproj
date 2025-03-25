@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E70AF2B12D925E5C00C96CC8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E70AF2B02D925E5C00C96CC8 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E70AF1F82D92194200C96CC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,7 +31,20 @@
 		E70AF1E62D92194000C96CC8 /* FetchChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70AF1F72D92194200C96CC8 /* FetchChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70AF2012D92194200C96CC8 /* FetchChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70AF2B02D925E5C00C96CC8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E70AF2A82D924C8500C96CC8 /* Exceptions for "FetchChallengeTests" folder in "FetchChallenge" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/Mocks/recipes_empty.json,
+				Helpers/Mocks/recipes_malformed.json,
+				Helpers/Mocks/recipes_success.json,
+			);
+			target = E70AF1E52D92194000C96CC8 /* FetchChallenge */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E70AF1E82D92194000C96CC8 /* FetchChallenge */ = {
@@ -37,6 +54,9 @@
 		};
 		E70AF1FA2D92194200C96CC8 /* FetchChallengeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E70AF2A82D924C8500C96CC8 /* Exceptions for "FetchChallengeTests" folder in "FetchChallenge" target */,
+			);
 			path = FetchChallengeTests;
 			sourceTree = "<group>";
 		};
@@ -75,6 +95,7 @@
 		E70AF1DD2D92194000C96CC8 = {
 			isa = PBXGroup;
 			children = (
+				E70AF2B02D925E5C00C96CC8 /* README.md */,
 				E70AF1E82D92194000C96CC8 /* FetchChallenge */,
 				E70AF1FA2D92194200C96CC8 /* FetchChallengeTests */,
 				E70AF2042D92194200C96CC8 /* FetchChallengeUITests */,
@@ -212,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70AF2B12D925E5C00C96CC8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

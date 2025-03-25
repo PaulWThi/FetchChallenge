@@ -1,17 +1,19 @@
-//
-//  FetchChallengeApp.swift
-//  FetchChallenge
-//
-//  Created by Paul Thi on 3/24/25.
-//
-
 import SwiftUI
 
 @main
-struct FetchChallengeApp: App {
+struct Fetch_ChallengeApp: App {
+    @StateObject private var homeViewModel = HomeViewModel(networkService: DefaultNetworkService())
+    @State private var forcePlaceholder = false
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                SelectionView(
+                    homeViewModel: homeViewModel,
+                    forcePlaceholder: $forcePlaceholder
+                )
+            }
+            .environment(\.forcePlaceholder, forcePlaceholder)
         }
     }
 }
